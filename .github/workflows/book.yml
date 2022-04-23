@@ -22,14 +22,14 @@ jobs:
     - name: Install jupyterbook dependencies
       run: |
         pip install -r book-requirements.txt
-    - name: Install notebook dependencies
-      run: |
-        conda install mamba -c conda-forge
-        mamba env create -f environment.yml
-        conda activate ligo
-        pip install .
-        python -m ipykernel install --user --name ligo --display-name "IPython -LIGO"
-        conda deactivate ligo
+    #- name: Install notebook dependencies
+    #  run: |
+    #    conda install mamba -c conda-forge
+    #    mamba env create -f environment.yml
+    #    conda activate ligo
+    #    pip install .
+    #    python -m ipykernel install --user --name ligo --display-name "IPython -LIGO"
+    #    conda deactivate ligo
     # Build the book
     - name: Build the book
       run: |
