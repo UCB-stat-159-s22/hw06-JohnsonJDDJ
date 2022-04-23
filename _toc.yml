@@ -1,4 +1,6 @@
 format: jb-book
-root: README
-chapters:
- - file: index
+root: index
+parts:
+ - caption: README
+   chapters:
+    - file: README
