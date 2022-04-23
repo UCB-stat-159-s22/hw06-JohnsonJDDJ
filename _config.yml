@@ -5,4 +5,4 @@ copyright                   : "2022"  # Copyright year to be placed in the foote
 only_build_toc_files        : true
 
 execute:
-  execute_notebooks         : auto
+  execute_notebooks         : off
