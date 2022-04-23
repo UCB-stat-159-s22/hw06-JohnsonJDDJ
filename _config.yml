@@ -1,0 +1,8 @@
+title                       : Binary Black Hole Signals In LIGO Open Data # The title of the book. 
+author                      : Ligo Scientific Collaboration (LSC) and Johnson Du # The author of the book
+copyright                   : "2022"  # Copyright year to be placed in the footer
+
+only_build_toc_files        : true
+
+execute:
+  execute_notebooks         : auto
