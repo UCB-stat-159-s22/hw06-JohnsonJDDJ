@@ -185,6 +185,17 @@
    Makefile Commands
   </a>
  </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#testing-ligotools-package">
+   Testing
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     ligotools
+    </span>
+   </code>
+   Package
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -215,6 +226,17 @@
    Makefile Commands
   </a>
  </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#testing-ligotools-package">
+   Testing
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     ligotools
+    </span>
+   </code>
+   Package
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -232,12 +254,20 @@
 <div class="section" id="makefile-commands">
 <h1>Makefile Commands<a class="headerlink" href="#makefile-commands" title="Permalink to this headline">¶</a></h1>
 <ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">env</span></code> Create conda environment named <em>ligo</em>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">env</span></code> Create conda environment named <code class="docutils literal notranslate"><span class="pre">ligo</span></code>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">clean</span></code>: Clean all output files.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code>*: Builds jupyter-book locally.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html-hub</span></code>*: Builds jupyter-book accessible through jupyter hub.</p></li>
 </ol>
 <p>*: To run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> and <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html-hub</span></code>, you must be inside a <em>Python 3</em> environment with <em>jupyter-book</em> installed. The environment <code class="docutils literal notranslate"><span class="pre">ligo</span></code> runs on python 2.7, thus we cannot run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> and <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html-hub</span></code> under the environment <code class="docutils literal notranslate"><span class="pre">ligo</span></code>.</p>
+</div>
+<div class="section" id="testing-ligotools-package">
+<h1>Testing <code class="docutils literal notranslate"><span class="pre">ligotools</span></code> Package<a class="headerlink" href="#testing-ligotools-package" title="Permalink to this headline">¶</a></h1>
+<p>The package <code class="docutils literal notranslate"><span class="pre">pytest</span></code> is not installed by default in the <code class="docutils literal notranslate"><span class="pre">ligo</span></code> environment. To run the test on the <code class="docutils literal notranslate"><span class="pre">ligotools</span></code> package, execute the following line:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">pytest</span>
+<span class="n">pytest</span> <span class="n">ligotools</span>
+</pre></div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
